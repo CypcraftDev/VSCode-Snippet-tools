@@ -1,0 +1,95 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"PHP open close": {
+		"scope": "",
+		"prefix": "ph",
+		"body": [
+			"<?php\n",
+			"?>"
+		],
+		"description": "Open and close PHP balises"
+    },
+	
+	"HTML Com": {
+		"scope": "",
+		"prefix": "!",
+		"body": [
+			"<!--  -->"
+		],
+		"description": "Opne and close html comments"
+	},
+
+	"CSS debug": {
+		"scope": "",
+		"prefix": "CSS",
+		"body": [
+			"*{box-shadow: 0 0 0 3px red inset;}"
+		],
+		"description": "Show padding area"
+	},
+
+	"CSS add": {
+		"scope": "",
+		"prefix": "CSS",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"./css/${1:pageName}.css\" />"
+		],
+		"description": "Add css link"
+	},
+
+	"CSS center add": {
+		"scope": "",
+		"prefix": "centerp",
+		"body": [
+			".center{\n\tdisplay: flex;\n\tjustify-content: center;\n}"
+		],
+		"description": "Add css center properties"
+	},
+
+	"CSS center div": {
+		"scope": "",
+		"prefix": "centerd",
+		"body": [
+			"<div class=\"center\">\n\n</div>"
+		],
+		"description": "Add html center properties"
+	},
+
+	"For Loop": {
+		"prefix": ["for", "for-loop"],
+		"body": ["for (int ${1:name} = ${2:startindex}; ${1:name} < length(${3:array}); ${1:name} = ${1:name} + ${4:incrementValue}) {", "\t$0", "}"],
+		"description": "A for loop."
+	},
+
+	"ijava base": {
+		"prefix": ["ij", "ijava"],
+		"body": [
+			"class ${TM_FILENAME_BASE} extends Program{\n\n\tvoid algorithm(){\n\n\t}\n}"
+		],
+		"description": "A ijava base."
+	},
+
+	"ij debug": {
+		"prefix": ["ijd", "ijavad"],
+		"body": [
+			"println(\"L${TM_LINE_NUMBER}\");"
+		],
+		"description": "A ijava base."
+	}
+	
+}
